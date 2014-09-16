@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F99B5BF719C8FC7D00535738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B5BF619C8FC7D00535738 /* AppDelegate.swift */; };
+		F99B5BF919C8FC7D00535738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B5BF819C8FC7D00535738 /* ViewController.swift */; };
+		F99B5BFC19C8FC7D00535738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99B5BFA19C8FC7D00535738 /* Main.storyboard */; };
+		F99B5BFE19C8FC7D00535738 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99B5BFD19C8FC7D00535738 /* Images.xcassets */; };
+		F99B5C0119C8FC7D00535738 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99B5BFF19C8FC7D00535738 /* LaunchScreen.xib */; };
+		F99B5C0D19C8FC7D00535738 /* AzkarReminderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B5C0C19C8FC7D00535738 /* AzkarReminderAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F99B5C0719C8FC7D00535738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F99B5BE919C8FC7D00535738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F99B5BF019C8FC7D00535738;
+			remoteInfo = AzkarReminderApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F99B5BF119C8FC7D00535738 /* AzkarReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzkarReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99B5BF519C8FC7D00535738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99B5BF619C8FC7D00535738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F99B5BF819C8FC7D00535738 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F99B5BFB19C8FC7D00535738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F99B5BFD19C8FC7D00535738 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F99B5C0019C8FC7D00535738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F99B5C0619C8FC7D00535738 /* AzkarReminderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzkarReminderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99B5C0B19C8FC7D00535738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99B5C0C19C8FC7D00535738 /* AzkarReminderAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzkarReminderAppTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F99B5BEE19C8FC7D00535738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B5C0319C8FC7D00535738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F99B5BE819C8FC7D00535738 = {
+			isa = PBXGroup;
+			children = (
+				F99B5BF319C8FC7D00535738 /* AzkarReminderApp */,
+				F99B5C0919C8FC7D00535738 /* AzkarReminderAppTests */,
+				F99B5BF219C8FC7D00535738 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F99B5BF219C8FC7D00535738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F99B5BF119C8FC7D00535738 /* AzkarReminderApp.app */,
+				F99B5C0619C8FC7D00535738 /* AzkarReminderAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F99B5BF319C8FC7D00535738 /* AzkarReminderApp */ = {
+			isa = PBXGroup;
+			children = (
+				F99B5BF619C8FC7D00535738 /* AppDelegate.swift */,
+				F99B5BF819C8FC7D00535738 /* ViewController.swift */,
+				F99B5BFA19C8FC7D00535738 /* Main.storyboard */,
+				F99B5BFD19C8FC7D00535738 /* Images.xcassets */,
+				F99B5BFF19C8FC7D00535738 /* LaunchScreen.xib */,
+				F99B5BF419C8FC7D00535738 /* Supporting Files */,
+			);
+			path = AzkarReminderApp;
+			sourceTree = "<group>";
+		};
+		F99B5BF419C8FC7D00535738 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F99B5BF519C8FC7D00535738 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F99B5C0919C8FC7D00535738 /* AzkarReminderAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F99B5C0C19C8FC7D00535738 /* AzkarReminderAppTests.swift */,
+				F99B5C0A19C8FC7D00535738 /* Supporting Files */,
+			);
+			path = AzkarReminderAppTests;
+			sourceTree = "<group>";
+		};
+		F99B5C0A19C8FC7D00535738 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F99B5C0B19C8FC7D00535738 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F99B5BF019C8FC7D00535738 /* AzkarReminderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99B5C1019C8FC7D00535738 /* Build configuration list for PBXNativeTarget "AzkarReminderApp" */;
+			buildPhases = (
+				F99B5BED19C8FC7D00535738 /* Sources */,
+				F99B5BEE19C8FC7D00535738 /* Frameworks */,
+				F99B5BEF19C8FC7D00535738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzkarReminderApp;
+			productName = AzkarReminderApp;
+			productReference = F99B5BF119C8FC7D00535738 /* AzkarReminderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F99B5C0519C8FC7D00535738 /* AzkarReminderAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99B5C1319C8FC7D00535738 /* Build configuration list for PBXNativeTarget "AzkarReminderAppTests" */;
+			buildPhases = (
+				F99B5C0219C8FC7D00535738 /* Sources */,
+				F99B5C0319C8FC7D00535738 /* Frameworks */,
+				F99B5C0419C8FC7D00535738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F99B5C0819C8FC7D00535738 /* PBXTargetDependency */,
+			);
+			name = AzkarReminderAppTests;
+			productName = AzkarReminderAppTests;
+			productReference = F99B5C0619C8FC7D00535738 /* AzkarReminderAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F99B5BE919C8FC7D00535738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = aboelbisher;
+				TargetAttributes = {
+					F99B5BF019C8FC7D00535738 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F99B5C0519C8FC7D00535738 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F99B5BF019C8FC7D00535738;
+					};
+				};
+			};
+			buildConfigurationList = F99B5BEC19C8FC7D00535738 /* Build configuration list for PBXProject "AzkarReminderApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F99B5BE819C8FC7D00535738;
+			productRefGroup = F99B5BF219C8FC7D00535738 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F99B5BF019C8FC7D00535738 /* AzkarReminderApp */,
+				F99B5C0519C8FC7D00535738 /* AzkarReminderAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F99B5BEF19C8FC7D00535738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B5BFC19C8FC7D00535738 /* Main.storyboard in Resources */,
+				F99B5C0119C8FC7D00535738 /* LaunchScreen.xib in Resources */,
+				F99B5BFE19C8FC7D00535738 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B5C0419C8FC7D00535738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F99B5BED19C8FC7D00535738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B5BF919C8FC7D00535738 /* ViewController.swift in Sources */,
+				F99B5BF719C8FC7D00535738 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99B5C0219C8FC7D00535738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B5C0D19C8FC7D00535738 /* AzkarReminderAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F99B5C0819C8FC7D00535738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F99B5BF019C8FC7D00535738 /* AzkarReminderApp */;
+			targetProxy = F99B5C0719C8FC7D00535738 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F99B5BFA19C8FC7D00535738 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F99B5BFB19C8FC7D00535738 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F99B5BFF19C8FC7D00535738 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F99B5C0019C8FC7D00535738 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F99B5C0E19C8FC7D00535738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F99B5C0F19C8FC7D00535738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F99B5C1119C8FC7D00535738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AzkarReminderApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F99B5C1219C8FC7D00535738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AzkarReminderApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F99B5C1419C8FC7D00535738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AzkarReminderAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AzkarReminderApp.app/AzkarReminderApp";
+			};
+			name = Debug;
+		};
+		F99B5C1519C8FC7D00535738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AzkarReminderAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AzkarReminderApp.app/AzkarReminderApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F99B5BEC19C8FC7D00535738 /* Build configuration list for PBXProject "AzkarReminderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B5C0E19C8FC7D00535738 /* Debug */,
+				F99B5C0F19C8FC7D00535738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99B5C1019C8FC7D00535738 /* Build configuration list for PBXNativeTarget "AzkarReminderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B5C1119C8FC7D00535738 /* Debug */,
+				F99B5C1219C8FC7D00535738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F99B5C1319C8FC7D00535738 /* Build configuration list for PBXNativeTarget "AzkarReminderAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99B5C1419C8FC7D00535738 /* Debug */,
+				F99B5C1519C8FC7D00535738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F99B5BE919C8FC7D00535738 /* Project object */;
+}
