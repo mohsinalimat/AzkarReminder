@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F942856419E211DD006EB15B /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942856319E211DD006EB15B /* PrayerTimes.swift */; };
 		F99B5BF719C8FC7D00535738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B5BF619C8FC7D00535738 /* AppDelegate.swift */; };
 		F99B5BF919C8FC7D00535738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B5BF819C8FC7D00535738 /* ViewController.swift */; };
 		F99B5BFC19C8FC7D00535738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99B5BFA19C8FC7D00535738 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F942856319E211DD006EB15B /* PrayerTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
 		F99B5BF119C8FC7D00535738 /* AzkarReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzkarReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99B5BF519C8FC7D00535738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F99B5BF619C8FC7D00535738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				F99B5BF619C8FC7D00535738 /* AppDelegate.swift */,
 				F99B5BF819C8FC7D00535738 /* ViewController.swift */,
+				F942856319E211DD006EB15B /* PrayerTimes.swift */,
 				F99B5BFA19C8FC7D00535738 /* Main.storyboard */,
 				F99B5BFD19C8FC7D00535738 /* Images.xcassets */,
 				F99B5BFF19C8FC7D00535738 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F99B5BF919C8FC7D00535738 /* ViewController.swift in Sources */,
+				F942856419E211DD006EB15B /* PrayerTimes.swift in Sources */,
 				F99B5BF719C8FC7D00535738 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +341,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AzkarReminderApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -347,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AzkarReminderApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +412,7 @@
 				F99B5C1219C8FC7D00535738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F99B5C1319C8FC7D00535738 /* Build configuration list for PBXNativeTarget "AzkarReminderAppTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +421,7 @@
 				F99B5C1519C8FC7D00535738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
