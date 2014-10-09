@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U2G-ZH-0xN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -118,6 +118,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Prayer Times View Controller-->
+        <scene sceneID="iFY-v7-1eJ">
+            <objects>
+                <viewController id="U2G-ZH-0xN" customClass="PrayerTimesViewController" customModule="AzkarReminderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="79n-As-ARv"/>
+                        <viewControllerLayoutGuide type="bottom" id="DDl-vN-wqv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IIx-gU-BtK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oo-QV-uTw">
+                                <rect key="frame" x="277" y="550" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findMyLocation:" destination="U2G-ZH-0xN" eventType="touchUpInside" id="7Fo-vc-BeI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNx-gw-kxa">
+                                <rect key="frame" x="279" y="102" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ME1-Fv-vlz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فجر" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7p-IF-TIJ">
+                                <rect key="frame" x="288" y="62" width="24" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ldf-TU-reW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iNx-gw-kxa" firstAttribute="top" secondItem="q7p-IF-TIJ" secondAttribute="bottom" constant="19" id="7iW-8p-hhr"/>
+                            <constraint firstItem="q7p-IF-TIJ" firstAttribute="top" secondItem="79n-As-ARv" secondAttribute="bottom" constant="42" id="S8Q-M6-9xc"/>
+                            <constraint firstItem="iNx-gw-kxa" firstAttribute="centerX" secondItem="8Oo-QV-uTw" secondAttribute="centerX" id="Vaf-Zd-lug"/>
+                            <constraint firstItem="q7p-IF-TIJ" firstAttribute="centerX" secondItem="iNx-gw-kxa" secondAttribute="centerX" id="ZWL-hc-0f4"/>
+                            <constraint firstAttribute="bottom" secondItem="8Oo-QV-uTw" secondAttribute="bottom" constant="20" symbolic="YES" id="Zxr-Vy-FOp"/>
+                            <constraint firstItem="8Oo-QV-uTw" firstAttribute="centerX" secondItem="IIx-gU-BtK" secondAttribute="centerX" id="xab-hN-EYL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fajirLabel" destination="iNx-gw-kxa" id="C9e-rD-xQG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPF-Gg-041" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="384"/>
         </scene>
     </scenes>
     <resources>

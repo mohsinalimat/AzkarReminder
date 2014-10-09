@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        // get the version
         let Device = UIDevice.currentDevice()
         let iosVersion = NSString(string: Device.systemVersion).doubleValue
         let iOS8 = iosVersion >= 8
@@ -25,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         
         if iOS8
         {
+            
+            //ask for permission to send local notifications (for IOS 8)
             application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
         }
         else if iOS7
@@ -35,8 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         
 
         
+        // if the applicaation got a notification and user clicks it
         if var launch = launchOptions
         {
+            //if the the user clicked the local notification 
             if var locaNotifications : UILocalNotification = launch[UIApplicationLaunchOptionsLocalNotificationKey] as? UILocalNotification
             {
                 var alerView : UIAlertView = UIAlertView(title: "اذكار", message: locaNotifications.alertBody, delegate: nil, cancelButtonTitle: "OK")
