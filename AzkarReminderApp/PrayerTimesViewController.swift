@@ -26,11 +26,11 @@ class PrayerTimesViewController: UIViewController, CLLocationManagerDelegate { /
     
     
     @IBOutlet weak var fajirLabel: UILabel!
-//    @IBOutlet weak var fajirLabel: UILabel!
-//    @IBOutlet weak var duhurLabel: UILabel!
-//    @IBOutlet weak var asrLabel: UILabel!
-//    @IBOutlet weak var magribLabel: UILabel!
-//    @IBOutlet weak var eshaLabel: UILabel!
+    @IBOutlet weak var sunRiseLabel: UILabel!
+    @IBOutlet weak var duhurLabel: UILabel!
+    @IBOutlet weak var asrLabel: UILabel!
+    @IBOutlet weak var mageribLabel: UILabel!
+    @IBOutlet weak var ishaLabel: UILabel!
     
     
     
@@ -213,6 +213,11 @@ class PrayerTimesViewController: UIViewController, CLLocationManagerDelegate { /
     func updateLabels(times : [String : String])
     {
         fajirLabel.text = times[self.FAJIR]
+        sunRiseLabel.text = times[self.SUNRISE]
+        duhurLabel.text = times[self.DUHUR]
+        asrLabel.text = times[self.ASR]
+        mageribLabel.text = times[self.MAGRIB]
+        ishaLabel.text = times[self.ISHA]
     }
 
     
