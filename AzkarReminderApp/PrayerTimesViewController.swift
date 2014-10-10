@@ -18,7 +18,10 @@ class PrayerTimesViewController: UIViewController, CLLocationManagerDelegate { /
     let DUHUR = "zuhr"
     let ASR = "asr"
     let MAGRIB = "maghrib"
-    let ESHA = "isha"
+    let ISHA = "isha"
+    let SUNRISE = "sunrise"
+    
+    let DAYSNUM = 30;
 
     
     
@@ -41,7 +44,23 @@ class PrayerTimesViewController: UIViewController, CLLocationManagerDelegate { /
     
     override func viewWillAppear(animated: Bool)
     {
-        self.automaticLocationFinder();
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components(.CalendarUnitDay  , fromDate: date)
+        let day = components.day
+
+        //self.automaticLocationFinder();
+        let timesDic = getTimeAtDay(day.description)
+        if(timesDic.count == 0)
+        {
+            self.automaticLocationFinder()
+        }
+        else
+        {
+            updateLabels(timesDic)
+        }
+        
+        
     }
     
     @IBAction func findMyLocation(sender: AnyObject)
@@ -165,42 +184,35 @@ class PrayerTimesViewController: UIViewController, CLLocationManagerDelegate { /
             let myData = (webString as NSString).dataUsingEncoding(NSUTF8StringEncoding);
             let jsonOptional: NSDictionary! = NSJSONSerialization.JSONObjectWithData(myData!, options: NSJSONReadingOptions(0), error: &jsonErrorOptional) as NSDictionary
             
-            
-            let timesDic  = jsonOptional.objectForKey(day) as NSDictionary?
-            
-//            let fajir = myArray?.objectForKey(self.FAJIR) as NSString
-//            let duhur = myArray?.objectForKey(self.DUHUR) as NSString
-//            let asr = myArray?.objectForKey(self.ASR) as NSString
-//            let magrib = myArray?.objectForKey(self.MAGRIB) as NSString
-//            let esha = myArray?.objectForKey(self.ESHA) as NSString
-//            
-//            let timesArray : NSArray
-            
-            
-            self.getTimesAndUpdateLabels(times: timesDic!)
-
-            //let
-            
-            
-            
-            
-//            #if DEBUG
-//                print("ptinting Array");
-//            for item in myArray!
-//            {
-//                print(item);
-//                print("\n");
-//            }
-//            #endif
+            for (var i = 0; i <= self.DAYSNUM ; i++)
+            {
+                var timesDic  = jsonOptional.objectForKey(i.description) as NSDictionary?
+                if(timesDic != nil)
+                {
+                    self.getTimesAndStore(times: timesDic! ,day: i.description)
+                }
+            }
             
         }
         task.resume()
     }
     
     
-    func getTimesAndUpdateLabels(times timesLocal : NSDictionary) //  this function update the labels
+    func getTimesAndStore(times timesLocal : NSDictionary , day : NSString) //  this function update the labels
     {
-        fajirLabel.text = timesLocal[self.FAJIR] as NSString
+        let fajir = timesLocal.objectForKey(self.FAJIR) as NSString
+        let sunRise = timesLocal.objectForKey(self.SUNRISE) as NSString
+        let duhur = timesLocal.objectForKey(self.DUHUR) as NSString
+        let asr = timesLocal.objectForKey(self.ASR) as NSString
+        let magrib = timesLocal.objectForKey(self.MAGRIB) as NSString
+        let isha = timesLocal.objectForKey(self.ISHA) as NSString
+
+        saveTimeAtDay(day, fajir, sunRise, duhur, asr, magrib, isha)
+    }
+    
+    func updateLabels(times : [String : String])
+    {
+        fajirLabel.text = times[self.FAJIR]
     }
 
     
