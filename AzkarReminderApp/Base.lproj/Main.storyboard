@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U2G-ZH-0xN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qaw-tv-VNN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AzkarReminderApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,6 +107,7 @@
                             <constraint firstItem="vag-f7-srF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="jfF-VD-4ye"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Xza-qY-4TC"/>
                     <connections>
                         <outlet property="hourLabel" destination="Y9C-Fy-Oi1" id="EKT-LY-MJd"/>
                         <outlet property="sa3aLabel" destination="9og-PW-r4l" id="mrK-hT-Hy6"/>
@@ -118,8 +119,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="821" y="136"/>
         </scene>
-        <!--Prayer Times View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="4eS-oI-L8A">
+            <objects>
+                <tabBarController id="Qaw-tv-VNN" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="MZX-kz-trF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="fdn-yk-KcE"/>
+                        <segue destination="U2G-ZH-0xN" kind="relationship" relationship="viewControllers" id="S3W-yD-HOQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hrl-VZ-EeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="425"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="iFY-v7-1eJ">
             <objects>
                 <viewController id="U2G-ZH-0xN" customClass="PrayerTimesViewController" customModule="AzkarReminderApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -281,6 +302,7 @@
                             <constraint firstItem="ilw-Xt-ocd" firstAttribute="top" secondItem="it7-xq-isf" secondAttribute="bottom" constant="36" id="z31-wo-IB0"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="hoO-Gp-JwD"/>
                     <connections>
                         <outlet property="asrLabel" destination="l39-11-JhU" id="4iB-kL-edT"/>
                         <outlet property="duhurLabel" destination="it7-xq-isf" id="PYS-4f-N7y"/>
@@ -292,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPF-Gg-041" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="384"/>
+            <point key="canvasLocation" x="867" y="984"/>
         </scene>
     </scenes>
     <resources>
