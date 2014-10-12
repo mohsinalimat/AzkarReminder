@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F942856419E211DD006EB15B /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942856319E211DD006EB15B /* PrayerTimes.swift */; };
 		F97F975219E2FA4000C64A22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97F975119E2FA4000C64A22 /* CoreLocation.framework */; };
 		F991BE3C19E2F241002447A1 /* PrayerTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F991BE3B19E2F241002447A1 /* PrayerTimesViewController.swift */; };
 		F99B5BF719C8FC7D00535738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B5BF619C8FC7D00535738 /* AppDelegate.swift */; };
@@ -18,6 +17,7 @@
 		F99B5C0D19C8FC7D00535738 /* AzkarReminderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B5C0C19C8FC7D00535738 /* AzkarReminderAppTests.swift */; };
 		F9AF0FB919E7F7E60060F3DF /* AzkarReminderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9AF0FB719E7F7E60060F3DF /* AzkarReminderApp.xcdatamodeld */; };
 		F9AF0FBB19E7F9B20060F3DF /* CoreDataSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF0FBA19E7F9B20060F3DF /* CoreDataSave.swift */; };
+		F9AF0FEF19E9A4E10060F3DF /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF0FEE19E9A4E10060F3DF /* CompassViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F942856319E211DD006EB15B /* PrayerTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
 		F97F975119E2FA4000C64A22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F991BE3B19E2F241002447A1 /* PrayerTimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerTimesViewController.swift; sourceTree = "<group>"; };
 		F99B5BF119C8FC7D00535738 /* AzkarReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzkarReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		F9AF0FAF19E7F50A0060F3DF /* AzkarReminderApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AzkarReminderApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9AF0FB819E7F7E60060F3DF /* AzkarReminderApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AzkarReminderApp.xcdatamodel; sourceTree = "<group>"; };
 		F9AF0FBA19E7F9B20060F3DF /* CoreDataSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataSave.swift; sourceTree = "<group>"; };
+		F9AF0FEE19E9A4E10060F3DF /* CompassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +95,9 @@
 				F9AF0FB719E7F7E60060F3DF /* AzkarReminderApp.xcdatamodeld */,
 				F99B5BF619C8FC7D00535738 /* AppDelegate.swift */,
 				F99B5BF819C8FC7D00535738 /* ViewController.swift */,
-				F942856319E211DD006EB15B /* PrayerTimes.swift */,
 				F991BE3B19E2F241002447A1 /* PrayerTimesViewController.swift */,
 				F9AF0FBA19E7F9B20060F3DF /* CoreDataSave.swift */,
+				F9AF0FEE19E9A4E10060F3DF /* CompassViewController.swift */,
 				F99B5BFF19C8FC7D00535738 /* LaunchScreen.xib */,
 				F99B5BF419C8FC7D00535738 /* Supporting Files */,
 				F9AF0FAF19E7F50A0060F3DF /* AzkarReminderApp-Bridging-Header.h */,
@@ -232,8 +232,8 @@
 			files = (
 				F99B5BF919C8FC7D00535738 /* ViewController.swift in Sources */,
 				F9AF0FBB19E7F9B20060F3DF /* CoreDataSave.swift in Sources */,
-				F942856419E211DD006EB15B /* PrayerTimes.swift in Sources */,
 				F9AF0FB919E7F7E60060F3DF /* AzkarReminderApp.xcdatamodeld in Sources */,
+				F9AF0FEF19E9A4E10060F3DF /* CompassViewController.swift in Sources */,
 				F991BE3C19E2F241002447A1 /* PrayerTimesViewController.swift in Sources */,
 				F99B5BF719C8FC7D00535738 /* AppDelegate.swift in Sources */,
 			);
