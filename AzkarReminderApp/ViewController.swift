@@ -35,30 +35,32 @@ class ViewController: UIViewController , NSURLConnectionDelegate
     {
         super.viewDidLoad()
         
-
+        
+        
         // make click gesture recognizer and add it to welcomeView
         // initilaize animator
-        var tapRec = UITapGestureRecognizer(target: self, action: "viewTapped:")
-        animator = UIDynamicAnimator(referenceView: view)
-        let welcomeView = createWelcomeView(self.view)
-        welcomeView.addGestureRecognizer(tapRec);
         
-        
-        createLabelAtCenterOfView(welcomeView)
-        createImageViewAtCenterOf(welcomeView)
-        
-        
-        //initilize the gravity behavior to be upwords
-        gravity = UIGravityBehavior(items: [welcomeView])
-        gravity.angle = CGFloat(-M_PI_2);
-        gravity.magnitude = 2;
-        animator.addBehavior(gravity)
-        
-        //initilize the cllision behavior and draw a line at the top of the display (0 , 0)->(0 , width)
-        collision = UICollisionBehavior(items: [welcomeView])
-        collision.addBoundaryWithIdentifier("bottom", fromPoint: CGPoint(x: 0, y: self.view.bounds.height*2), toPoint: CGPoint(x: self.view.bounds.width, y: self.view.bounds.height*2));
-        collision.addBoundaryWithIdentifier("top", fromPoint: CGPoint(x: 0, y: -1), toPoint: CGPoint(x: self.view.bounds.width, y: -1))
-        animator.addBehavior(collision);
+//        var tapRec = UITapGestureRecognizer(target: self, action: "viewTapped:")
+//        animator = UIDynamicAnimator(referenceView: view)
+//        let welcomeView = createWelcomeView(self.view)
+//        welcomeView.addGestureRecognizer(tapRec);
+//        
+//        
+//        createLabelAtCenterOfView(welcomeView)
+//        createImageViewAtCenterOf(welcomeView)
+//        
+//        
+//        //initilize the gravity behavior to be upwords
+//        gravity = UIGravityBehavior(items: [welcomeView])
+//        gravity.angle = CGFloat(-M_PI_2);
+//        gravity.magnitude = 2;
+//        animator.addBehavior(gravity)
+//        
+//        //initilize the cllision behavior and draw a line at the top of the display (0 , 0)->(0 , width)
+//        collision = UICollisionBehavior(items: [welcomeView])
+//        collision.addBoundaryWithIdentifier("bottom", fromPoint: CGPoint(x: 0, y: self.view.bounds.height*2), toPoint: CGPoint(x: self.view.bounds.width, y: self.view.bounds.height*2));
+//        collision.addBoundaryWithIdentifier("top", fromPoint: CGPoint(x: 0, y: -1), toPoint: CGPoint(x: self.view.bounds.width, y: -1))
+//        animator.addBehavior(collision);
 
         
         
@@ -74,6 +76,10 @@ class ViewController: UIViewController , NSURLConnectionDelegate
         var hourString = intValue.description
         hourLabel.text = hourString
         slider.setValue( myValue, animated: true)
+        if(myValue == 0)
+        {
+            self.switcher.on = false
+        }
         
         getJson();
        
@@ -133,6 +139,7 @@ class ViewController: UIViewController , NSURLConnectionDelegate
         notification.repeatInterval = NSCalendarUnit.CalendarUnitDay
         notification.fireDate = calendar.dateFromComponents(components)
         notification.alertBody = message
+        notification.soundName = UILocalNotificationDefaultSoundName
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     

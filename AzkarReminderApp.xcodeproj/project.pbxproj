@@ -18,6 +18,7 @@
 		F9AF0FB919E7F7E60060F3DF /* AzkarReminderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9AF0FB719E7F7E60060F3DF /* AzkarReminderApp.xcdatamodeld */; };
 		F9AF0FBB19E7F9B20060F3DF /* CoreDataSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF0FBA19E7F9B20060F3DF /* CoreDataSave.swift */; };
 		F9AF0FEF19E9A4E10060F3DF /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AF0FEE19E9A4E10060F3DF /* CompassViewController.swift */; };
+		F9B9DABF19F03EDF00094714 /* adanNaser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F9B9DABE19F03EDF00094714 /* adanNaser.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F92FEA0919F1EB5F00FB0A6C /* sub.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sub.caf; sourceTree = "<group>"; };
 		F97F975119E2FA4000C64A22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F991BE3B19E2F241002447A1 /* PrayerTimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerTimesViewController.swift; sourceTree = "<group>"; };
 		F99B5BF119C8FC7D00535738 /* AzkarReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzkarReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,7 @@
 		F9AF0FB819E7F7E60060F3DF /* AzkarReminderApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AzkarReminderApp.xcdatamodel; sourceTree = "<group>"; };
 		F9AF0FBA19E7F9B20060F3DF /* CoreDataSave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataSave.swift; sourceTree = "<group>"; };
 		F9AF0FEE19E9A4E10060F3DF /* CompassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
+		F9B9DABE19F03EDF00094714 /* adanNaser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = adanNaser.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +93,16 @@
 		F99B5BF319C8FC7D00535738 /* AzkarReminderApp */ = {
 			isa = PBXGroup;
 			children = (
+				F9B9DABE19F03EDF00094714 /* adanNaser.mp3 */,
 				F99B5BFA19C8FC7D00535738 /* Main.storyboard */,
+				F92FEA0919F1EB5F00FB0A6C /* sub.caf */,
 				F99B5BFD19C8FC7D00535738 /* Images.xcassets */,
 				F9AF0FB719E7F7E60060F3DF /* AzkarReminderApp.xcdatamodeld */,
-				F99B5BF619C8FC7D00535738 /* AppDelegate.swift */,
 				F99B5BF819C8FC7D00535738 /* ViewController.swift */,
-				F991BE3B19E2F241002447A1 /* PrayerTimesViewController.swift */,
-				F9AF0FBA19E7F9B20060F3DF /* CoreDataSave.swift */,
 				F9AF0FEE19E9A4E10060F3DF /* CompassViewController.swift */,
+				F991BE3B19E2F241002447A1 /* PrayerTimesViewController.swift */,
+				F99B5BF619C8FC7D00535738 /* AppDelegate.swift */,
+				F9AF0FBA19E7F9B20060F3DF /* CoreDataSave.swift */,
 				F99B5BFF19C8FC7D00535738 /* LaunchScreen.xib */,
 				F99B5BF419C8FC7D00535738 /* Supporting Files */,
 				F9AF0FAF19E7F50A0060F3DF /* AzkarReminderApp-Bridging-Header.h */,
@@ -210,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B9DABF19F03EDF00094714 /* adanNaser.mp3 in Resources */,
 				F99B5BFC19C8FC7D00535738 /* Main.storyboard in Resources */,
 				F99B5C0119C8FC7D00535738 /* LaunchScreen.xib in Resources */,
 				F99B5BFE19C8FC7D00535738 /* Images.xcassets in Resources */,
